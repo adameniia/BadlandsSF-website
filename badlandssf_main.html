@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to BADLANDS SF!</title>
+
+    <meta name="description" content="CSS only mobile first navigation">
+    <meta name="author" content="Andrei Dameniia">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.1/jquery.validate.min.js"></script>
+
+    <!-- Latest compiled and minified CSS, jQuery, JavaScript for Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/files/css3-mediaqueries.js"></script>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!--css-->
+    <link href="badlandssf_style_sheet.css" rel="stylesheet" type="text/css">
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+    <script src="drop_down_menu.js"></script>
+
+
+
+    <script>
+        $(document).ready(function(){
+            // Activate Carousel
+            $("#myCarousel").carousel({interval: 5000});
+
+            // Enable Carousel Indicators
+            $(".item1").click(function(){
+                $("#myCarousel").carousel(0);
+            });
+            $(".item2").click(function(){
+                $("#myCarousel").carousel(1);
+            });
+            $(".item3").click(function(){
+                $("#myCarousel").carousel(2);
+            });
+            $(".item4").click(function(){
+                $("#myCarousel").carousel(3);
+            });
+            $(".item5").click(function(){
+                $("#myCarousel").carousel(4);
+            });
+
+            // Enable Carousel Controls
+            $(".left").click(function(){
+                $("#myCarousel").carousel("prev");
+            });
+            $(".right").click(function(){
+                $("#myCarousel").carousel("next");
+            });
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+<header  class="header">
+    <div class="header-container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4 col-xs-12">
+                    <h1 style="color: red; text-align: center; font-style: italic; vertical-align: middle; position: relative; ">
+                        <strong> BADLANDS SF</strong>
+                    </h1>
+                        <h6 style="font-style: italic; text-align: center">
+                            <strong>  4121 18th st., San Francisco, CA</strong>
+                        </h6>
+
+                </div>
+
+                <div class="col-lg-6 col-xs-4" style="text-align: center; position: relative; margin: 25px auto;">
+                    <nav class="nav">
+                        <ul>
+                            <li class="current"><a href="#">MENU</a></li>
+                            <li><a href="#about">ABOUT</a></li>
+                            <li><a href="#location-map">LOCATION</a>
+                            </li>
+                            <li><a href="#specials">SPECIALS</span></a>
+                                <!--<ul>
+                                    <li><a href=#>Monday</a></li>
+                                    <li><a href=#>Tuesday</a></li>
+                                    <li><a href=#>Wednesday</a></li>
+                                    <li><a href=#>Thursday</a></li>
+                                    <li><a href=#>Friday</a></li>
+                                    <li><a href=#>Saturday</a></li>
+                                    <li><a href=#>Sunday</a></li>
+                                </ul>-->
+                            </li>
+
+                            <li><a href="gallery.html">GALLERY</a>
+                            </li>
+                            <li><a href="#contacts">CONTACTS</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col-lg-2 col-xs-8" id="header-img-container">
+                    <a href="https://www.facebook.com/Badlands-158245524202434/">
+                        <img style="margin: 30px 10px auto" alt="facebook-badlands" src="facebook-icon.png" width="40" height="40">
+                    </a>
+                    <a href="https://www.instagram.com/badlandssf/">
+                        <img style="margin: 30px 10px auto" alt="instagram-badlands" src="instagram-icon.png" width="40" height="40">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="main">
+
+    <div id="myCarousel" class="carousel slide" style="width: 100%">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li class="item1 active"></li>
+            <li class="item2"></li>
+            <li class="item3"></li>
+            <li class="item4"></li>
+            <li class="item5"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+
+
+
+            <div class="item active">
+                <img src="badlands_outside1.jpg" alt="badlands_outside1" width="1000" height="563">
+                <div class="carousel-caption">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="carousel-2for1-1.jpg" alt="two_for_one1" width="1000" height="563">
+                <div class="carousel-caption">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="thursday_gogo1.jpg" alt="thursday_gogo1" width="1000" height="563">
+                <div class="carousel-caption">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="grey_goose_redbull.jpeg" alt="grey_goose_redbull" width="1000" height="563">
+                <div class="carousel-caption">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+
+            <div class="item">
+                <img src="thursday_gogo2.jpg" alt="thursday_gogo2" width="1000" height="563">
+                <div class="carousel-caption">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Left and right controls -->
+        <a class="left carousel-control" role="button">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" role="button">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <hr>
+
+    <div id="about" class="container-fluid flex-container">
+        <div class="row">
+            <div class="col-lg-4 col-sm-4 col-xs-3">
+                    <img src="thursday_gogo_main_banner.jpg" alt="thursday_gogo_main_banner">
+            </div>
+            <div class="col-lg-8 col-sm-8 col-xs-9">
+                <p>San Francisco Badlands is the Castro's most popular location for video/music entertainment and dancing.
+                    For more than two decades we are the place to have fun, meet new friends and celebrate life.
+                    Every day we serve 2 FOR 1 and play Top 40 hits
+                </p>
+                <p>We open our doors at 2pm on FRIDAY and SUNDAY, and at 3pm the other days.
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-4 col-lg-push-8 col-xs-4">
+                <img src="staff1.png" style="width: 100%"  alt="stuff1"/>
+            </div>
+            <div class="col-lg-8 col-lg-pull-4 col-xs-8">
+                <h2>Become a Part of Our Team</h2>
+                <p>We are currently looking for part-time barbacks and security. Bring your resume or stop by to fill in an application any day of the week
+                </p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="specials" class="container-fluid">
+        <div class="row">
+            <h2>Some of Our Specials</h2>
+            <br>
+            <div class="col-lg-4 col-xs-4">
+                <img src="special-longisland-2.jpg" style="width: 100%" alt="special-longisland-2">
+            </div>
+            <div class="col-lg-4 col-xs-4">
+                <img src="special-fireball-2.jpg" style="width: 100%" alt="special-fireball-2">
+            </div>
+            <div class="col-lg-4 col-xs-4">
+                <img src="special-cucucmberlime-3.jpg" style="width: 100%" alt="special-cucucmberlime-3">
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="location-map">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-5 col-xs-5">
+                    <div class="map-container" style="padding-left: 5px">
+                        <iframe style="box-shadow: 8px 8px 10px rgba(40, 19, 20, 0.88); width: 100%; height: auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3154.2513066162014!2d-122.43765004902778!3d37.760705220642365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7e04ccef77b1%3A0x88e83a01d0cc545!2sSan+Francisco+Badlands!5e0!3m2!1sen!2sus!4v1500443709253" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="col-lg-7 col-xs-7">
+                    <h2>Our Location</h2>
+                    <p>We are located in the heart of the worldfamous Castro area, within walking distance from the Muni and 24 hour transportation.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div id="contacts">
+        <div class="container-fluid">
+            <div class="row">
+                <h2>Contacts</h2>
+                <p>Address: 4121 18th st., San Francisco, CA
+                </p>
+                <p>Mon-Thu and Sat: 3pm-2am
+                </p>
+                <p>Fri and Sun: 2pm-2am
+                </p>
+                <p>Email: info@sfbadlands.com
+                </p>
+                <p>For lost and found - please come to the bar during business hours and ask personnel for assistance.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+</div><!-- ends Main -->
+
+<div id="main-footer">
+            <div class="box">
+                <div class="main-footer-img-container">
+                    <a href="https://www.facebook.com/Badlands-158245524202434/">
+                        <img style="margin: auto" alt="facebook-badlands" src="facebook-icon.png" width="40" height="40">
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div style="margin: 20px auto">
+                    <a href="#"><span style="color: #dc0014; font-style: normal; font-size: large">GALLERY</span></a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="main-footer-img-container">
+                    <a href="https://www.instagram.com/badlandssf/">
+                        <img style="margin: auto" alt="instagram-badlands" src="instagram-icon.png" width="40" height="40">
+                    </a>
+                </div>
+            </div>
+
+</div>
+
+    <br>
+    <footer style="margin:  0 auto; color: #bababa; text-align: center">
+        <a href = "https://validator.w3.org/check?uri=referer">
+            <img style="border:0; width:50px;height:50px" src = "html.png"
+                 alt = "HTML5"> </a>
+        <a href = "https://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:0; width:43px;height:21px" src = "w3c.png"
+                 alt = "CSS"> </a>
+        <h6>&copy;<a style="margin:  0 auto; color: #bababa;" href="https://www.facebook.com/DronDrumm">BadlandsSF - All rights reserved</a></h6>
+    </footer>
+
+</body>
+</html>
